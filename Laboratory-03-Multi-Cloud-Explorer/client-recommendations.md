@@ -1,6 +1,5 @@
 # Client Cloud Recommendations & Decision Matrix
 
-## Client Recommendations (Checkpoint 4)
 
 ### Client A – Startup Company
 * **Recommended Platform:** AWS (Amazon Web Services)
