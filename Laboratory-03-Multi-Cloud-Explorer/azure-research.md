@@ -25,5 +25,4 @@ The Azure Portal is a unified web console that provides central access to monito
 * Hybrid Cloud and Active Directory Infrastructure Migration
 * AI-Assisted Software Development using GitHub Copilot and Visual Studio Code
 
-## Platform Screenshot
-![Azure Research Screenshot](screenshots/azure-research.png)
+
