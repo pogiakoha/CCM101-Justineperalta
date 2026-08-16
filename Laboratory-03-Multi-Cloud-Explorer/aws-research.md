@@ -26,5 +26,4 @@ The AWS Management Console is a web-based portal where engineers can view and ma
 * Generative AI and Machine Learning Development
 
 
-## Platform Screenshot
-![AWS Research Screenshot](screenshots/aws-research.png)
+
