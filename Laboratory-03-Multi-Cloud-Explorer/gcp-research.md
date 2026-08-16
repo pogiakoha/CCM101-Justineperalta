@@ -25,5 +25,4 @@ The Google Cloud Console is a clean, developer-centric web interface designed to
 * AI Security Defense and Generative AI Application Development
 * Big Data Analytics and High-Throughput Processing
 
-## Platform Screenshot
-![GCP Research Screenshot](screenshots/gcp-research.png)
+
