@@ -1,1 +1,42 @@
+version: '3.8'
 
+services:
+  db:
+    image: mysql:8.0
+    container_name: cloudnova_mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: SecureRootPassword123!
+      MYSQL_DATABASE: wordpress_db
+      MYSQL_USER: wp_user
+      MYSQL_PASSWORD: SecureWPUserPassword123!
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  wordpress:
+    image: wordpress:latest
+    container_name: cloudnova_wordpress_app
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress_db
+      WORDPRESS_DB_USER: wp_user
+      WORDPRESS_DB_PASSWORD: SecureWPUserPassword123!
+    volumes:
+      - wp_data:/var/www/html
+    networks:
+      - app-network
+
+volumes:
+  db_data:
+  wp_data:
+
+networks:
+  app-network:
+    driver: bridge
